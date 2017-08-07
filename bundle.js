@@ -6,6 +6,7 @@ builder.loadConfig('./config.js');
 
 (async function() {
 
+    await bundle('./src/test');
     await bundle('./src/test - src/dependency!plugin');
     await bundle('./src/test - src/dependency');
     await bundle('./src/test - src/**/*!plugin');
